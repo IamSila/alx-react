@@ -18,7 +18,7 @@ function App() {
         {/* email */}
         <label for='email'>email</label>
         <input type='email' placeholder='enter your email' id='email'></input>
-        <br></br>
+
         {/* password */}
         <label for='password'>password</label>
         <input type='password' id='password'></input>

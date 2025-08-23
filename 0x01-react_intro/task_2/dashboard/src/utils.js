@@ -8,3 +8,9 @@ export function getFooterCopy(isIndex) {
   }
     return 'ALX main dashboard';
 }
+
+export function getLatestNotification() {
+  return (
+    <p><strong>Urgent requirement</strong> - complete by EOD</p>
+  );
+}
