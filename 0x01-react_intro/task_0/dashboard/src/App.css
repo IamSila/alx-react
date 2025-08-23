@@ -1,0 +1,37 @@
+.App {
+  text-align: left;
+}
+
+.Alx-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border-bottom: 4px solid red;
+}
+
+.App-header h1 {
+  color: red;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-body {
+  min-height: 60vh;
+  border-bottom: 4px solid red;
+}
+
+.App-footer {
+  text-align: center;
+}
