@@ -9,10 +9,9 @@ $('body').append('<button>Click here to get started</button>');
 $('body').append(`<p id = "count"></p>`);
 $('body').append('<p>Copyright - ALX</p>');
 
-
 function updateCounter() {
-    count++;
-    $("#count").html(`${count} clicks on the button`);
+  count++;
+  $("#count").html(`${count} clicks on the button`);
 };
 
 $('button').on('click', _.debounce(updateCounter, 500));
