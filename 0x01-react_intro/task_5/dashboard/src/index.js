@@ -1,4 +1,22 @@
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from '../src/App/App';
+import reportWebVitals from './reportWebVitals';
+import Notifications from '../src/Notifications/Notification';
 
-$('body').append('<p>Hello webpack, remember me?</p>');
-$('body').append('<h1>Great day it is today</h1>');
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <div className="root-notifications">
+      <Notifications />
+    </div>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
