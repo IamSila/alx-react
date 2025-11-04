@@ -1,14 +1,14 @@
-import { getFullYear, getFooterCopy, getLatestNotifications } from './utils';
+import { getFullYear, getFooterCopy, getLatestNotification } from "./utils";
 
-test('it returns correct year', () => {
-  expect(getFullYear()).toBe(2025);
+test("returns current year", () => {
+  expect(getFullYear()).toBe(2022);
 });
 
-test('correct footer', () => {
-  expect(getFooterCopy(true)).toBe('ALX');
-  expect(getFooterCopy(false)).toBe('ALX main dashboard');
+test("correct footer copy", () => {
+  expect(getFooterCopy(true)).toBe("Holberton School");
+  expect(getFooterCopy(false)).toBe("Holberton School main dashboard");
 });
 
 test("returns right notification", () => {
-  expect(getLatestNotifications()).toBe("<strong>Urgent requirement</strong> - complete by EOD");
+  expect(getLatestNotification()).toBe("<strong>Urgent requirement</strong> - complete by EOD");
 });
