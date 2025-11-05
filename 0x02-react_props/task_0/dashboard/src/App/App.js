@@ -2,22 +2,20 @@ import React from "react";
 import logo from "../assets/holberton-logo.jpg";
 import "./App.css";
 import { getFullYear, getFooterCopy } from "../utils/utils";
-// Notifications, Login, Footer, and Header components
-import Notifications from '../Notifications/Notifications';
-import Login from '../Login/Login.js';
-import Footer from '../Footer/Footer';
+import Notifications from '../Notifications/Notification';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Login from '../Login/Login'
 
 function App() {
   return (
-    <>
+    
+    <div className="App">
       <Notifications />
-      <div className="App">
-        <Header />
-        <Login />
-        <Footer />
-      </div>
-    </>
+      <Header />
+      <Login />
+      <Footer />
+    </div>
   );
 }
 
