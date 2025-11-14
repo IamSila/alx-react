@@ -1,0 +1,15 @@
+.Notifications {
+    border: 1px dashed red;
+}
+
+.Notifications ul li:nth-child(1) {
+    color: red;
+}
+
+.Notifications li[data='default'] {
+    color: blue;
+}
+
+.Notifications li[data='urgent'] {
+    color: red;
+}
